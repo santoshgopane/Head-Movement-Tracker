@@ -44,7 +44,8 @@ while True:
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     except:
-        cv2.imshow('Video',image)
+        cv2.imshow('Head Movement Tracking',image)
+        cv2.imshow('Face Detection',img)
         print("You're out of Frame!")
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
